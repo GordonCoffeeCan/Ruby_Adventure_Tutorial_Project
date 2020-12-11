@@ -1,0 +1,52 @@
+/target:library
+/nowarn:0169
+/out:Temp/PsdPlugin.dll
+/unsafe
+/debug:portable
+/optimize-
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
+/reference:Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.Ter

@@ -1,0 +1,17 @@
+/target:library
+/nowarn:0169
+/out:Temp/Unity.InternalAPIEditorBridge.001.dll
+/debug:portable
+/optimize-
+/nostdlib+
+/preferreduilang:en-US
+/langversion:latest
+/reference:Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll
+/reference:Library/ScriptAssemblies/UnityEditor.UI.dll
+/reference:Library/ScriptAssemblies/UnityEngine.UI.dll
+/reference:Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+/reference:Library/ScriptAssemblies/UnityEngine.TestRunner.dll
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
+/reference:"E:/Program Files/Unity2019_4_12/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+/reference:"E:
