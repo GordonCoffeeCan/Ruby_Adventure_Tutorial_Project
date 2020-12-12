@@ -8,6 +8,15 @@ public class UIHealthBar : MonoBehaviour
     public Image mask;
     float originalSize;
 
+    public static UIHealthBar Instance {
+        get;
+        private set;
+    }
+
+    private void Awake() {
+        Instance = this;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
