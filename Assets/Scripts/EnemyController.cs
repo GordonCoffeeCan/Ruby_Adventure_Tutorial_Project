@@ -92,7 +92,14 @@ public class EnemyController : MonoBehaviour
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
         int randomNum = Random.Range(0, 2);
-        audioSource.PlayOneShot(fixedSound);
+        audioSource.Stop();
+        audioSource.volume = 1;
         audioSource.PlayOneShot(hitSounds[randomNum]);
+        Invoke("PlayFixedSound", 0.5f);
+        this.GetComponent<SpriteRenderer>().sortingOrder = 1;
+    }
+
+    private void PlayFixedSound() {
+        audioSource.PlayOneShot(fixedSound);
     }
 }

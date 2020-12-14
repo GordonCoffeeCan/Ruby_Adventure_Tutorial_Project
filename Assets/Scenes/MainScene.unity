@@ -162,7 +162,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e406c04157c663a43b859646b7ad3c2a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 0.15
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2110,6 +2110,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Robot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397496567506969663, guid: 85a2112b2702cec4aa75933216493e0f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85a2112b2702cec4aa75933216493e0f, type: 3}
@@ -5588,6 +5593,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Robot
       objectReference: {fileID: 0}
+    - target: {fileID: 2397496567506969663, guid: 85a2112b2702cec4aa75933216493e0f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85a2112b2702cec4aa75933216493e0f, type: 3}
 --- !u!1001 &991752618
@@ -5661,6 +5671,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Robot (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397496567506969663, guid: 85a2112b2702cec4aa75933216493e0f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85a2112b2702cec4aa75933216493e0f, type: 3}
@@ -6630,6 +6645,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Robot (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2397496567506969663, guid: 85a2112b2702cec4aa75933216493e0f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85a2112b2702cec4aa75933216493e0f, type: 3}
 --- !u!4 &1211225805 stripped
@@ -7087,6 +7107,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Robot (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397496567506969663, guid: 85a2112b2702cec4aa75933216493e0f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85a2112b2702cec4aa75933216493e0f, type: 3}
@@ -17303,6 +17328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Robot (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397496567506969663, guid: 85a2112b2702cec4aa75933216493e0f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85a2112b2702cec4aa75933216493e0f, type: 3}

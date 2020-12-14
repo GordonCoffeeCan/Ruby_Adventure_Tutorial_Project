@@ -26,9 +26,12 @@ public class RubyController : MonoBehaviour
 
     public GameObject projectilePrefab;
 
-    private AudioSource audioSource;
+    public AudioSource audioSource;
+    public AudioSource walkAudioSource;
+
     public AudioClip playerHit;
     public AudioClip attackSoundClip;
+    public AudioClip walkSound;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +39,7 @@ public class RubyController : MonoBehaviour
         rig = this.GetComponent<Rigidbody2D>();
         animator = this.GetComponent<Animator>();
         currentHealth = maxHealth;
-        audioSource = this.GetComponent<AudioSource>();
+        //audioSource = this.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -75,6 +78,12 @@ public class RubyController : MonoBehaviour
         if(!Mathf.Approximately(move.x, 0) || !Mathf.Approximately(move.y, 0)) {
             lookDirection.Set(move.x, move.y);
             lookDirection.Normalize();
+            walkAudioSource.clip = walkSound;
+            if (!walkAudioSource.isPlaying) {
+                walkAudioSource.Play();
+            }
+        } else {
+            walkAudioSource.Stop();
         }
         //动画控制
         animator.SetFloat("Look X", lookDirection.x);
