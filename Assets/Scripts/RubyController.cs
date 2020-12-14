@@ -26,26 +26,41 @@ public class RubyController : MonoBehaviour
 
     public GameObject projectilePrefab;
 
+    private AudioSource audioSource;
+    public AudioClip playerHit;
+    public AudioClip attackSoundClip;
+
     // Start is called before the first frame update
     void Start()
     {
         rig = this.GetComponent<Rigidbody2D>();
         animator = this.GetComponent<Animator>();
         currentHealth = maxHealth;
+        audioSource = this.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //无敌时间计算
         if (isInvicible) {
             invicibleTimer -= Time.deltaTime;
             if(invicibleTimer <= 0) {
                 isInvicible = false;
             }
         }
-
+        //发射零件修理
         if (Input.GetKeyDown(KeyCode.Space)) {
             Launch();
+        }
+
+        if (Input.GetKeyDown(KeyCode.F)) {
+            RaycastHit2D hit = Physics2D.Raycast((Vector2)this.transform.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
+            if (hit.collider != null) {
+                Debug.Log(hit.collider.name);
+                NPCDialog nPCDialog = hit.collider.GetComponent<NPCDialog>();
+                nPCDialog.DisplayDialog();
+            }
         }
     }
 
@@ -61,13 +76,13 @@ public class RubyController : MonoBehaviour
             lookDirection.Set(move.x, move.y);
             lookDirection.Normalize();
         }
-
+        //动画控制
         animator.SetFloat("Look X", lookDirection.x);
         animator.SetFloat("Look Y", lookDirection.y);
         animator.SetFloat("Speed", move.magnitude);
 
+        //移动控制
         Vector2 position = transform.position;
-
         //position.x += speed * horizontal * Time.deltaTime;
         //position.y += speed * vertical * Time.deltaTime;
 
@@ -94,6 +109,7 @@ public class RubyController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
         UIHealthBar.Instance.SetValue(currentHealth / (float)maxHealth);
+        PlaySound(playerHit);
     }
 
     private void Launch() {
@@ -101,5 +117,10 @@ public class RubyController : MonoBehaviour
         Projectile projectile = projectileObject.GetComponent<Projectile>();
         projectile.Launch(lookDirection, 300);
         animator.SetTrigger("Launch");
+        PlaySound(attackSoundClip);
+    }
+
+    public void PlaySound(AudioClip audioClip) {
+        audioSource.PlayOneShot(audioClip);
     }
 }

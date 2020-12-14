@@ -18,6 +18,10 @@ public class EnemyController : MonoBehaviour
 
     private Animator animator;
 
+    private AudioSource audioSource;
+    public AudioClip fixedSound;
+    public AudioClip[] hitSounds;
+
     //机器人是否故障
     private bool broken = true;
 
@@ -30,6 +34,7 @@ public class EnemyController : MonoBehaviour
         //animator.SetFloat("MoveX", direction);
         //animator.SetBool("Vertical", vertical);
         PlayMoveAnimation();
+        audioSource = this.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -86,5 +91,8 @@ public class EnemyController : MonoBehaviour
         rig.simulated = false;
         animator.SetTrigger("Fixed");
         smokeEffect.Stop();
+        int randomNum = Random.Range(0, 2);
+        audioSource.PlayOneShot(fixedSound);
+        audioSource.PlayOneShot(hitSounds[randomNum]);
     }
 }

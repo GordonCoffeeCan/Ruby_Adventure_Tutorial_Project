@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HealthCollectible : MonoBehaviour
 {
+    public AudioClip audioClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,7 @@ public class HealthCollectible : MonoBehaviour
             //判断Ruby是否满血状态
             if (rubyController.Health < rubyController.maxHealth) {
                 rubyController.ChangeHealth(1);
+                rubyController.PlaySound(audioClip);
                 Destroy(this.gameObject);
             }
         }
