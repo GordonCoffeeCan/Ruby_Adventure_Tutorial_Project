@@ -33,6 +33,8 @@ public class RubyController : MonoBehaviour
     public AudioClip attackSoundClip;
     public AudioClip walkSound;
 
+    private Vector3 respawnPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,7 @@ public class RubyController : MonoBehaviour
         animator = this.GetComponent<Animator>();
         currentHealth = maxHealth;
         //audioSource = this.GetComponent<AudioSource>();
+        respawnPosition = this.transform.position;
     }
 
     // Update is called once per frame
@@ -118,11 +121,17 @@ public class RubyController : MonoBehaviour
 
         //改变生命值（增加或减少）
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log(currentHealth + "/" + maxHealth);
         UIHealthBar.Instance.SetValue(currentHealth / (float)maxHealth);
+
+        if(currentHealth <= 0) {
+            Respawn();
+        }
     }
 
     private void Launch() {
+        if (!UIHealthBar.Instance.hasTask) {
+            return;
+        }
         GameObject projectileObject = Instantiate(projectilePrefab, rig.position + Vector2.up * 0.5f, Quaternion.identity);
         Projectile projectile = projectileObject.GetComponent<Projectile>();
         projectile.Launch(lookDirection, 300);
@@ -132,5 +141,10 @@ public class RubyController : MonoBehaviour
 
     public void PlaySound(AudioClip audioClip) {
         audioSource.PlayOneShot(audioClip);
+    }
+
+    private void Respawn() {
+        ChangeHealth(maxHealth);
+        this.transform.position = respawnPosition;
     }
 }

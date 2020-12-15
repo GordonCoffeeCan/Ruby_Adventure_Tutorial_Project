@@ -99,6 +99,7 @@ public class EnemyController : MonoBehaviour
         audioSource.PlayOneShot(hitSounds[randomNum]);
         Invoke("PlayFixedSound", 0.5f);
         this.GetComponent<SpriteRenderer>().sortingOrder = 1;
+        UIHealthBar.Instance.fixedNum++;
     }
 
     private void PlayFixedSound() {

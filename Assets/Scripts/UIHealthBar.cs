@@ -13,6 +13,10 @@ public class UIHealthBar : MonoBehaviour
         private set;
     }
 
+    public bool hasTask = false;
+    //public bool isCompleteTask = false;
+    public int fixedNum = 0;
+
     private void Awake() {
         Instance = this;
     }

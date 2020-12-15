@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1048366415964711451}
   - component: {fileID: 3766747577336906717}
   - component: {fileID: 216485364935174211}
+  - component: {fileID: 3880041085527932170}
   m_Layer: 0
   m_Name: CollectibleHealth
   m_TagString: Untagged
@@ -124,3 +125,22 @@ MonoBehaviour:
   audioClip: {fileID: 8300000, guid: af5f8b64e3f58f24c87ff8f789b04f6c, type: 3}
   effectParticle: {fileID: 8909505718236398904, guid: e868b64c8bb55f54dac227ce20a3dd2b,
     type: 3}
+--- !u!95 &3880041085527932170
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5292243067365717687}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c068c04185d83d64b924a265228ef596, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
