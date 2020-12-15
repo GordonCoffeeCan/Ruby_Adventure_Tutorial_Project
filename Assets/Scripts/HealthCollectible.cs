@@ -6,6 +6,8 @@ public class HealthCollectible : MonoBehaviour
 {
     public AudioClip audioClip;
 
+    public GameObject effectParticle;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,7 @@ public class HealthCollectible : MonoBehaviour
             if (rubyController.Health < rubyController.maxHealth) {
                 rubyController.ChangeHealth(1);
                 rubyController.PlaySound(audioClip);
+                Instantiate(effectParticle, this.transform.position, Quaternion.identity);
                 Destroy(this.gameObject);
             }
         }

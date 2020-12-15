@@ -21,6 +21,7 @@ public class EnemyController : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip fixedSound;
     public AudioClip[] hitSounds;
+    public GameObject hitEffectParticle;
 
     //机器人是否故障
     private bool broken = true;
@@ -87,6 +88,7 @@ public class EnemyController : MonoBehaviour
 
     //修复机器人的方法
     public void Fix() {
+        Instantiate(hitEffectParticle, this.transform.position, Quaternion.identity);
         broken = false;
         rig.simulated = false;
         animator.SetTrigger("Fixed");

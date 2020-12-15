@@ -122,3 +122,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: af5f8b64e3f58f24c87ff8f789b04f6c, type: 3}
+  effectParticle: {fileID: 8909505718236398904, guid: e868b64c8bb55f54dac227ce20a3dd2b,
+    type: 3}

@@ -4930,6 +4930,8 @@ MonoBehaviour:
   hitSounds:
   - {fileID: 8300000, guid: ae904c7305df7344d86b2092c0cb3a26, type: 3}
   - {fileID: 8300000, guid: 709a835b61b848644946696fdd5e5a4d, type: 3}
+  hitEffectParticle: {fileID: 7156978988644137735, guid: db6b35d30acc75d4c8ba578bcc5b8cb6,
+    type: 3}
 --- !u!82 &238686086521290904
 AudioSource:
   m_ObjectHideFlags: 0
