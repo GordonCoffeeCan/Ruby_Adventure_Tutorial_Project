@@ -17,9 +17,13 @@ public class RubyController : MonoBehaviour
     }
 
     //Ruby无敌时间
-    public float timeInvincible = 2f; //无敌时间常亮
+    public float timeInvincible = 2f; //无敌时间常量
     public bool isInvicible = false;
     private float invicibleTimer = 0; //计时器
+
+    //Shoot gap
+    public float shootTimeGap = 0.5f;
+    private float shootTimer = 0;
 
     private Vector2 lookDirection = new Vector2(1, 0);
     private Animator animator;
@@ -43,6 +47,8 @@ public class RubyController : MonoBehaviour
         currentHealth = maxHealth;
         //audioSource = this.GetComponent<AudioSource>();
         respawnPosition = this.transform.position;
+
+        shootTimer = shootTimeGap;
     }
 
     // Update is called once per frame
@@ -55,9 +61,15 @@ public class RubyController : MonoBehaviour
                 isInvicible = false;
             }
         }
+
         //发射零件修理
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            Launch();
+        if (shootTimer > 0) {
+            shootTimer -= Time.deltaTime;
+        } else {
+            if (Input.GetKeyDown(KeyCode.Space)) {
+                shootTimer = shootTimeGap;
+                Launch();
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.F)) {

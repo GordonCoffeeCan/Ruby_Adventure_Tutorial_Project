@@ -2059,7 +2059,7 @@ PrefabInstance:
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.949999
+      value: 12.84
       objectReference: {fileID: 0}
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
@@ -4480,7 +4480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask: {fileID: 1714433429}
   hasTask: 0
-  isCompleteTask: 1
+  fixedNum: 0
 --- !u!4 &788480549 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2037009659375199832, guid: d285b24cfea3ae745af29ce25a79a614,
@@ -4918,7 +4918,7 @@ GameObject:
   - component: {fileID: 875848561}
   m_Layer: 0
   m_Name: Left
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5538,12 +5538,12 @@ PrefabInstance:
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.09
+      value: 5.24
       objectReference: {fileID: 0}
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.86
+      value: 9.43
       objectReference: {fileID: 0}
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
@@ -5617,12 +5617,12 @@ PrefabInstance:
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.07
+      value: 6.44
       objectReference: {fileID: 0}
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.14
+      value: 16.2
       objectReference: {fileID: 0}
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
@@ -8255,12 +8255,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -8559,7 +8559,7 @@ GameObject:
   - component: {fileID: 1453972796}
   m_Layer: 0
   m_Name: Right
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16642,6 +16642,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1183608052718366575, guid: 5337ea6138f60ed4c972f7eabb89f56b,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
     - target: {fileID: 4663179736030619296, guid: 5337ea6138f60ed4c972f7eabb89f56b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17380,7 +17385,7 @@ GameObject:
   - component: {fileID: 1874938826}
   m_Layer: 0
   m_Name: Bottom
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17727,7 +17732,7 @@ GameObject:
   - component: {fileID: 1934285397}
   m_Layer: 0
   m_Name: Top
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

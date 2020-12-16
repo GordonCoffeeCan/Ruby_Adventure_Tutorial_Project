@@ -67,11 +67,23 @@ public class EnemyController : MonoBehaviour
         rig.MovePosition(position);
     }
 
-    //碰撞检测
-    private void OnCollisionEnter2D(Collision2D collision) {
-        RubyController rubyController = collision.gameObject.GetComponent<RubyController>();
-        if(rubyController != null) {
-            rubyController.ChangeHealth(-1);
+    //detecting the trigger event
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if(collision.name == "Ruby") {
+            Debug.Log("Player");
+            RubyController rubyController = collision.gameObject.GetComponent<RubyController>();
+            if (rubyController != null) {
+                rubyController.ChangeHealth(-1);
+            }
+        }
+
+        //change direction if touch any obstacles;
+        if(collision.tag == "Obstacle") {
+            timer = -10;
+        }
+
+        if (collision.tag == "Projectile") {
+            Fix();
         }
     }
 
@@ -87,7 +99,7 @@ public class EnemyController : MonoBehaviour
     }
 
     //修复机器人的方法
-    public void Fix() {
+    private void Fix() {
         Instantiate(hitEffectParticle, this.transform.position, Quaternion.identity);
         broken = false;
         rig.simulated = false;

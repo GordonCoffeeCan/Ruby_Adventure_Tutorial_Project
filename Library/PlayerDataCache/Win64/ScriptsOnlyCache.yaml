@@ -19,6 +19,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -84,47 +85,47 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 592}
+      Script: {instanceID: 594}
     - Class: 114
-      Script: {instanceID: 11264}
+      Script: {instanceID: 11266}
     - Class: 114
-      Script: {instanceID: 11406}
+      Script: {instanceID: 11408}
     - Class: 114
-      Script: {instanceID: 11576}
+      Script: {instanceID: 11578}
     - Class: 114
-      Script: {instanceID: 11638}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 12114}
+      Script: {instanceID: 12116}
     - Class: 114
-      Script: {instanceID: 12160}
+      Script: {instanceID: 12162}
     - Class: 114
-      Script: {instanceID: 12344}
+      Script: {instanceID: 12346}
     - Class: 114
-      Script: {instanceID: 12452}
+      Script: {instanceID: 12454}
     - Class: 114
-      Script: {instanceID: 12780}
+      Script: {instanceID: 12782}
     - Class: 114
-      Script: {instanceID: 12950}
+      Script: {instanceID: 12952}
     - Class: 114
-      Script: {instanceID: 13276}
+      Script: {instanceID: 13278}
     - Class: 114
-      Script: {instanceID: 13302}
+      Script: {instanceID: 13304}
     - Class: 114
-      Script: {instanceID: 13532}
+      Script: {instanceID: 13534}
     - Class: 114
-      Script: {instanceID: 13608}
+      Script: {instanceID: 13610}
     - Class: 114
-      Script: {instanceID: 13750}
+      Script: {instanceID: 13752}
     - Class: 114
-      Script: {instanceID: 13772}
+      Script: {instanceID: 13774}
     - Class: 114
-      Script: {instanceID: 13984}
+      Script: {instanceID: 13986}
     - Class: 114
-      Script: {instanceID: 14484}
+      Script: {instanceID: 14486}
     - Class: 114
-      Script: {instanceID: 14570}
+      Script: {instanceID: 14572}
     - Class: 114
-      Script: {instanceID: 14624}
+      Script: {instanceID: 14626}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -470,7 +471,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: bdf6fb0619a344968a3dc8a14b2d6e76
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Projectile
@@ -710,7 +711,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: b9211fa1da569dd36ba5b0b2336c72b8
+      Hash: c12023d1cc69f49194a37ca72f740bd6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RubyController

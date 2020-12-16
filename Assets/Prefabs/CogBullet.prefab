@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4988098205515499356}
   m_Layer: 9
   m_Name: CogBullet
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,3 +143,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76871855a090fb44189ca393c2293d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitEffect: {fileID: 7156978988644137735, guid: db6b35d30acc75d4c8ba578bcc5b8cb6,
+    type: 3}

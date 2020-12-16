@@ -6,6 +6,8 @@ public class Projectile : MonoBehaviour
 {
     private Rigidbody2D rig;
 
+    public GameObject hitEffect;
+
     private void Awake() {
         rig = this.GetComponent<Rigidbody2D>();
     }
@@ -26,14 +28,9 @@ public class Projectile : MonoBehaviour
         rig.AddForce(direction * force);
     }
 
+    //Projectile touches any obstacle destory itself;
     private void OnCollisionEnter2D(Collision2D collision) {
-        //Debug.Log("Hit gameobject is " + collision.gameObject);
-
-        EnemyController enemyController = collision.gameObject.GetComponent<EnemyController>();
-        if(enemyController != null) {
-            enemyController.Fix();
-        }
-
+        Instantiate(hitEffect, this.transform.position, Quaternion.identity);
         Destroy(this.gameObject);
     }
 }
