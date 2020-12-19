@@ -693,6 +693,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Action
       objectReference: {fileID: 0}
+    - target: {fileID: 11420752, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1871454365446325388, guid: efd319fd7e6731b41a84e7b28556860d,
+        type: 3}
     - target: {fileID: 11446900, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -747,7 +752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11446900, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
       propertyPath: showSpriteInspector
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11446900, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -813,6 +818,16 @@ PrefabInstance:
       propertyPath: axis.name
       value: Button Action
       objectReference: {fileID: 0}
+    - target: {fileID: 11446900, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
+      propertyPath: normalSprite
+      value: 
+      objectReference: {fileID: 1871454365446325388, guid: efd319fd7e6731b41a84e7b28556860d,
+        type: 3}
+    - target: {fileID: 11446900, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
+      propertyPath: pressedSprite
+      value: 
+      objectReference: {fileID: -4640330509532052334, guid: efd319fd7e6731b41a84e7b28556860d,
+        type: 3}
     - target: {fileID: 22345584, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 0
@@ -2403,6 +2418,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire
       objectReference: {fileID: 0}
+    - target: {fileID: 11420752, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8578271370445343074, guid: efd319fd7e6731b41a84e7b28556860d,
+        type: 3}
     - target: {fileID: 11446900, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.size
       value: 0
@@ -2457,7 +2477,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11446900, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
       propertyPath: showSpriteInspector
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11446900, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
       propertyPath: onPressed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2523,6 +2543,16 @@ PrefabInstance:
       propertyPath: axis.name
       value: Button Fire
       objectReference: {fileID: 0}
+    - target: {fileID: 11446900, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
+      propertyPath: normalSprite
+      value: 
+      objectReference: {fileID: -8578271370445343074, guid: efd319fd7e6731b41a84e7b28556860d,
+        type: 3}
+    - target: {fileID: 11446900, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
+      propertyPath: pressedSprite
+      value: 
+      objectReference: {fileID: -6031442867046419024, guid: efd319fd7e6731b41a84e7b28556860d,
+        type: 3}
     - target: {fileID: 22345584, guid: 437eb1afce72bb44ca24c6ac3fe90c1d, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 0
@@ -17804,6 +17834,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThirdPersonController
       objectReference: {fileID: 0}
+    - target: {fileID: 11432008, guid: 1794d837734f9f042ab2a7bb934cba5d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4050377478568521116, guid: efd319fd7e6731b41a84e7b28556860d,
+        type: 3}
+    - target: {fileID: 11458604, guid: 1794d837734f9f042ab2a7bb934cba5d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -49688392737679028, guid: efd319fd7e6731b41a84e7b28556860d,
+        type: 3}
     - target: {fileID: 11497706, guid: 1794d837734f9f042ab2a7bb934cba5d, type: 3}
       propertyPath: showAxesInspector
       value: 1
@@ -17830,7 +17870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11497706, guid: 1794d837734f9f042ab2a7bb934cba5d, type: 3}
       propertyPath: showSpriteInspector
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11497706, guid: 1794d837734f9f042ab2a7bb934cba5d, type: 3}
       propertyPath: showTouchEventInspector
@@ -17943,6 +17983,14 @@ PrefabInstance:
     - target: {fileID: 22412088, guid: 1794d837734f9f042ab2a7bb934cba5d, type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22462838, guid: 1794d837734f9f042ab2a7bb934cba5d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 22462838, guid: 1794d837734f9f042ab2a7bb934cba5d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1794d837734f9f042ab2a7bb934cba5d, type: 3}
