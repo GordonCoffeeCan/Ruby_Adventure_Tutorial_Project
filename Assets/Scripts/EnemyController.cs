@@ -70,7 +70,6 @@ public class EnemyController : MonoBehaviour
     //detecting the trigger event
     private void OnTriggerEnter2D(Collider2D collision) {
         if(collision.name == "Ruby") {
-            Debug.Log("Player");
             RubyController rubyController = collision.gameObject.GetComponent<RubyController>();
             if (rubyController != null) {
                 rubyController.ChangeHealth(-1);
@@ -83,6 +82,7 @@ public class EnemyController : MonoBehaviour
         }
 
         if (collision.tag == "Projectile") {
+            Destroy(collision.gameObject);
             Fix();
         }
     }
@@ -111,7 +111,7 @@ public class EnemyController : MonoBehaviour
         audioSource.PlayOneShot(hitSounds[randomNum]);
         Invoke("PlayFixedSound", 0.5f);
         this.GetComponent<SpriteRenderer>().sortingOrder = 1;
-        UIHealthBar.Instance.fixedNum++;
+        GameManager.Instance.fixedNum++;
     }
 
     private void PlayFixedSound() {

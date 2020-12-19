@@ -38,6 +38,11 @@ public class RubyController : MonoBehaviour
     public AudioClip walkSound;
 
     private Vector3 respawnPosition;
+    private NPCDialog taskNPC;
+
+    public ETCJoystick joystickLeft;
+    private bool onMobileAction = false;
+    private bool onMobileFire = false;
 
     // Start is called before the first frame update
     void Start()
@@ -49,11 +54,14 @@ public class RubyController : MonoBehaviour
         respawnPosition = this.transform.position;
 
         shootTimer = shootTimeGap;
+
+        taskNPC = GameObject.FindGameObjectWithTag("TaskNPC").GetComponent<NPCDialog>();
     }
 
     // Update is called once per frame
     void Update()
     {
+
         //无敌时间计算
         if (isInvicible) {
             invicibleTimer -= Time.deltaTime;
@@ -66,26 +74,38 @@ public class RubyController : MonoBehaviour
         if (shootTimer > 0) {
             shootTimer -= Time.deltaTime;
         } else {
-            if (Input.GetKeyDown(KeyCode.Space)) {
+            if (Input.GetKeyDown(KeyCode.Space) || onMobileFire) {
                 shootTimer = shootTimeGap;
                 Launch();
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.F)) {
-            RaycastHit2D hit = Physics2D.Raycast((Vector2)this.transform.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
-            if (hit.collider != null) {
-                Debug.Log(hit.collider.name);
-                NPCDialog nPCDialog = hit.collider.GetComponent<NPCDialog>();
-                nPCDialog.DisplayDialog();
+        if(DistanceToNPC() <= 1.3f) {
+            if (!taskNPC.dialogBox.activeSelf) {
+                taskNPC.buttonIndicator.SetActive(true);
+            } else {
+                taskNPC.buttonIndicator.SetActive(false);
             }
+            if (Input.GetKeyDown(KeyCode.F) || onMobileAction) {
+                taskNPC.DisplayDialog();
+            }
+        } else {
+            taskNPC.buttonIndicator.SetActive(false);
         }
     }
 
     private void FixedUpdate() {
+#if UNITY_STANDALONE
         //玩家输入
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
+#endif
+
+#if UNITY_ANDROID
+        //PlayerInput Mobile
+        float horizontal = joystickLeft.axisX.axisValue;
+        float vertical = joystickLeft.axisY.axisValue;
+#endif
 
         Vector2 move = new Vector2(horizontal, vertical);
 
@@ -133,7 +153,7 @@ public class RubyController : MonoBehaviour
 
         //改变生命值（增加或减少）
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        UIHealthBar.Instance.SetValue(currentHealth / (float)maxHealth);
+        GameManager.Instance.SetValue(currentHealth / (float)maxHealth);
 
         if(currentHealth <= 0) {
             Respawn();
@@ -141,7 +161,7 @@ public class RubyController : MonoBehaviour
     }
 
     private void Launch() {
-        if (!UIHealthBar.Instance.hasTask) {
+        if (!GameManager.Instance.hasTask) {
             return;
         }
         GameObject projectileObject = Instantiate(projectilePrefab, rig.position + Vector2.up * 0.5f, Quaternion.identity);
@@ -158,5 +178,26 @@ public class RubyController : MonoBehaviour
     private void Respawn() {
         ChangeHealth(maxHealth);
         this.transform.position = respawnPosition;
+    }
+
+    //Measure the distance between player and task NPC;
+    private float DistanceToNPC() {
+        return Vector3.Distance(this.transform.position, taskNPC.transform.position);
+    }
+
+    public void MobileActionPressed() {
+        onMobileAction = true;
+    }
+
+    public void MobileActionReleased() {
+        onMobileAction = false;
+    }
+
+    public void MobileFirePressed() {
+        onMobileFire = true;
+    }
+
+    public void MobileFireReleased() {
+        onMobileFire = false;
     }
 }

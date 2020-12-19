@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Projectile
+  - TaskNPC
   layers:
   - Default
   - TransparentFX

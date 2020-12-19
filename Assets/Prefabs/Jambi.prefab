@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5245367371532950087}
   m_Layer: 11
   m_Name: Jambi
-  m_TagString: Untagged
+  m_TagString: TaskNPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

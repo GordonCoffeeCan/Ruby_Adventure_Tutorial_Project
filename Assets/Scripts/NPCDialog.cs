@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class NPCDialog : MonoBehaviour {
     public GameObject dialogBox;
     public float displayTime = 4f;
+    public GameObject questMark;
+    public GameObject questionMark;
+    public GameObject buttonIndicator;
     private float timerDisplay;
     public Text dialogText;
     public AudioClip QuestCompletedClip;
@@ -15,6 +18,8 @@ public class NPCDialog : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         dialogBox.SetActive(false);
+        buttonIndicator.SetActive(false);
+        questionMark.SetActive(false);
     }
 
     // Update is called once per frame
@@ -29,9 +34,17 @@ public class NPCDialog : MonoBehaviour {
     public void DisplayDialog() {
         dialogBox.SetActive(true);
         timerDisplay = displayTime;
-        UIHealthBar.Instance.hasTask = true;
-        if (UIHealthBar.Instance.fixedNum >= 6) {
+        GameManager.Instance.hasTask = true;
+
+        if (!GameManager.Instance.taskComplete) {
+            questMark.SetActive(false);
+            questionMark.SetActive(true);
+        }
+
+        if (GameManager.Instance.fixedNum >= 6) {
             dialogText.text = "谢谢你Ruby，你真是太棒了！";
+            GameManager.Instance.taskComplete = true;
+            questionMark.SetActive(false);
             if (!hasPlayed) {
                 audioSource.PlayOneShot(QuestCompletedClip);
                 hasPlayed = true;
