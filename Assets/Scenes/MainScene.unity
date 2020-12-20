@@ -308,7 +308,7 @@ Transform:
   m_Children:
   - {fileID: 1603367913}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &62933755
 PrefabInstance:
@@ -676,7 +676,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &155800791
 PrefabInstance:
@@ -2711,7 +2711,7 @@ PrefabInstance:
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
@@ -3526,7 +3526,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -7.333, z: 0}
 --- !u!1001 &530277013
 PrefabInstance:
@@ -4943,7 +4943,7 @@ Transform:
   - {fileID: 556679612}
   - {fileID: 1425557188}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &734142191
 PrefabInstance:
@@ -5254,7 +5254,7 @@ Transform:
   - {fileID: 981183720}
   - {fileID: 980132500}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &821526635
 PrefabInstance:
@@ -6286,7 +6286,7 @@ PrefabInstance:
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
@@ -6365,7 +6365,7 @@ PrefabInstance:
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
@@ -7386,7 +7386,7 @@ PrefabInstance:
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
@@ -7849,7 +7849,7 @@ PrefabInstance:
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
@@ -8642,7 +8642,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 9
   m_TargetDisplay: 0
 --- !u!224 &1330695600
 RectTransform:
@@ -8660,7 +8660,7 @@ RectTransform:
   - {fileID: 489632296}
   - {fileID: 1966299860}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8959,7 +8959,7 @@ GameObject:
   - component: {fileID: 1424126155}
   - component: {fileID: 1424126154}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Game_UI_Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9039,7 +9039,7 @@ RectTransform:
   - {fileID: 782705864}
   - {fileID: 664451662}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -17424,7 +17424,7 @@ PrefabInstance:
     - target: {fileID: 4663179736030619296, guid: 5337ea6138f60ed4c972f7eabb89f56b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4663179736030619296, guid: 5337ea6138f60ed4c972f7eabb89f56b,
         type: 3}
@@ -18188,7 +18188,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 221.29306, y: 130.52135}
+  m_SizeDelta: {x: 221.29306, y: 141.0602}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1847036697
 MonoBehaviour:
@@ -18211,7 +18211,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 24
+    m_FontSize: 22
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -18221,8 +18221,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: "\u4F60\u597D\uFF0CRuby\uFF01\n\u6211\u662FJambi\uFF0C\u6211\u7684\u673A\u5668\u4EBA\u574F\u4E86\uFF0C\u53EF\u4EE5\u5E2E\u6211\u4FEE\u597D\u5B83\u4EEC\u4E48\uFF1F"
+    m_LineSpacing: 1.15
+  m_Text: Hi Ruby! I'm Jambi. My robots are broken. Could you help me fix them up?
 --- !u!222 &1847036698
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18281,7 +18281,7 @@ PrefabInstance:
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2397496567506969634, guid: 85a2112b2702cec4aa75933216493e0f,
         type: 3}
@@ -19923,7 +19923,7 @@ Transform:
   m_Children:
   - {fileID: 275299268}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2147438408
 PrefabInstance:
@@ -20165,7 +20165,7 @@ PrefabInstance:
     - target: {fileID: 8440190630772092055, guid: ae7ae702b7997484eb566c5b4c79204f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 8440190630772092055, guid: ae7ae702b7997484eb566c5b4c79204f,
         type: 3}
@@ -20234,7 +20234,7 @@ PrefabInstance:
     - target: {fileID: 7257363026920247403, guid: de8f0d4ffa1366c45a56efeac1664f81,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7257363026920247403, guid: de8f0d4ffa1366c45a56efeac1664f81,
         type: 3}

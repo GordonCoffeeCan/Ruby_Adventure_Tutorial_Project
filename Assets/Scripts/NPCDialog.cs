@@ -42,7 +42,7 @@ public class NPCDialog : MonoBehaviour {
         }
 
         if (GameManager.Instance.fixedNum >= 6) {
-            dialogText.text = "谢谢你Ruby，你真是太棒了！";
+            dialogText.text = "My robots are all fixed up! Thank you Ruby!";
             GameManager.Instance.taskComplete = true;
             questionMark.SetActive(false);
             if (!hasPlayed) {

@@ -35,10 +35,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -91,49 +89,49 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 594}
     - Class: 114
-      Script: {instanceID: 11246}
+      Script: {instanceID: 11742}
     - Class: 114
-      Script: {instanceID: 11422}
+      Script: {instanceID: 11886}
     - Class: 114
-      Script: {instanceID: 11598}
+      Script: {instanceID: 12062}
     - Class: 114
-      Script: {instanceID: 11662}
+      Script: {instanceID: 12126}
     - Class: 114
-      Script: {instanceID: 12158}
+      Script: {instanceID: 12620}
     - Class: 114
-      Script: {instanceID: 12210}
+      Script: {instanceID: 12672}
     - Class: 114
-      Script: {instanceID: 12400}
+      Script: {instanceID: 12864}
     - Class: 114
-      Script: {instanceID: 12514}
+      Script: {instanceID: 12978}
     - Class: 114
-      Script: {instanceID: 12866}
+      Script: {instanceID: 13330}
     - Class: 114
-      Script: {instanceID: 13050}
+      Script: {instanceID: 13514}
     - Class: 114
-      Script: {instanceID: 13386}
+      Script: {instanceID: 13852}
     - Class: 114
-      Script: {instanceID: 13416}
+      Script: {instanceID: 13882}
     - Class: 114
-      Script: {instanceID: 13660}
+      Script: {instanceID: 14126}
     - Class: 114
-      Script: {instanceID: 13738}
+      Script: {instanceID: 14204}
     - Class: 114
-      Script: {instanceID: 13886}
+      Script: {instanceID: 14352}
     - Class: 114
-      Script: {instanceID: 13908}
+      Script: {instanceID: 14374}
     - Class: 114
-      Script: {instanceID: 14050}
+      Script: {instanceID: 14516}
     - Class: 114
-      Script: {instanceID: 14130}
+      Script: {instanceID: 14596}
     - Class: 114
-      Script: {instanceID: 14302}
+      Script: {instanceID: 14768}
     - Class: 114
-      Script: {instanceID: 14668}
+      Script: {instanceID: 15134}
     - Class: 114
-      Script: {instanceID: 14762}
+      Script: {instanceID: 15228}
     - Class: 114
-      Script: {instanceID: 14820}
+      Script: {instanceID: 15286}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -169,28 +167,16 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 4bc4346a71a8df53a6b106f68ef3a190
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: CanvasScaler
-  - hash:
-      serializedVersion: 2
-      Hash: 5f1752ed2092162f016c19510c28a8b9
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Button
-  - hash:
-      serializedVersion: 2
-      Hash: caa533b001ae39b864ba8425019e2268
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Shadow
-  - hash:
-      serializedVersion: 2
       Hash: 6d3931a68d36ef1435d9b1527e434f13
     assemblyName: Assembly-CSharp.dll
     namespaceName: HedgehogTeam.EasyTouch
     className: EasyTouch
+  - hash:
+      serializedVersion: 2
+      Hash: 4bc4346a71a8df53a6b106f68ef3a190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
   - hash:
       serializedVersion: 2
       Hash: 23d669c8bf2983ca4a3df160658318a6
@@ -505,6 +491,12 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Shadow
+  - hash:
+      serializedVersion: 2
       Hash: 8963690ef6f6b05ce03bfd8b5c26e20c
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
@@ -773,6 +765,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: f84d945e5e1ca985698660fc26e9657f
